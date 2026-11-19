@@ -1,0 +1,23 @@
+name: 申请访问项目
+description: 申请查看私有仓库中的训练代码、模型和详细结果
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此 Issue 是公开的。请仅说明你的使用目的，不要提交密码、手机号或其他敏感信息。
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 使用目的
+      description: 简要说明希望如何使用或研究这个项目。
+      placeholder: 例如：学习四足机器人强化学习训练方法。
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: 确认
+      options:
+        - label: 我理解这是访问申请，是否获得邀请由仓库维护者决定。
+          required: true
